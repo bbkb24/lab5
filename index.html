@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Резюме - Бойко Божени</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f3f3f3;
+            margin: 0;
+            padding: 0;
+            transition: background-color 0.3s, color 0.3s;
+        }
+    </style>
+</head>
+<body>
+
+    <header class="resume-header">
+        <div class="name-block">
+            <h1 style="color: #6f42c1; text-transform: uppercase; font-size: 3rem; margin: 0;">Бойко Божена</h1>
+        </div>
+        <div class="stars-block">
+            <span>&#9733;</span> <span>&#9733;</span> <span>&#9733;</span>
+        </div>
+    </header>
+    <hr class="header-line">
+
+    <main class="resume-container">
+        <aside class="left-column">
+            <section class="objective-section">
+                <h2>Про мене</h2>
+                <p>Студент НУЛП, спеціальність 125 (кібербезпека та захист інформації), вивчаю веб-розробку.</p>
+            </section>
+            
+            <section class="skills-section">
+                <h2>Навички</h2>
+                <ul class="skills-list">
+                    <li>HTML / CSS / JS</li>
+                    <li>Базове розуміння Git</li>
+                    <li>Англійська мова (B1)</li>
+                </ul>
+            </section>
+            
+            <section class="contact-section">
+                <h2>Контакти</h2>
+                <p>Email: <a href="mailto:boiko.bozhena@example.com">boiko.bozhena@example.com</a></p>
+            </section>
+        </aside>
+        
+        <div class="main-column">
+            <section class="experience-section">
+                <h2 class="section-title">ДОСВІД РОБОТИ</h2>
+                <div class="experience-item">
+                    <p class="experience-date">грудень 2025 - січень 2026</p>
+                    <p class="experience-job">Python-розробник · Aitishnuk</p>
+                </div>
+                <hr class="experience-line">
+            </section>
+
+            <section class="comments-section">
+                <h2 class="section-title">Відгуки роботодавців</h2>
+                <div id="comments-container">
+                    <p>Завантаження коментарів...</p>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <footer id="site-footer" style="max-width: 900px; margin: 20px auto; padding: 20px; text-align: center; border-top: 1px solid #ccc;">
+        <button onclick="toggleTheme()" style="padding: 10px 20px; cursor: pointer; background: #6f42c1; color: white; border: none; border-radius: 5px; margin-bottom: 10px;">
+            Змінити тему (День/Ніч)
+        </button>
+    </footer>
+
+    <div id="contactModal" style="display:none; position:fixed; top:50%; left:50%; transform:translate(-50%, -50%); background:white; border:2px solid #6f42c1; padding:30px; z-index:1000; box-shadow: 0 0 20px rgba(0,0,0,0.3); border-radius: 10px; width: 300px;">
+        <h3 style="color: #6f42c1; margin-top: 0;">Зворотній зв'язок</h3>
+        <form action="https://formspree.io/f/meerbdgj" method="POST" style="display: flex; flex-direction: column; gap: 10px;">
+            <input type="text" name="name" placeholder="Ім'я" required style="padding: 8px;">
+            <input type="email" name="email" placeholder="Email" required style="padding: 8px;">
+            <input type="tel" name="phone" placeholder="Телефон" style="padding: 8px;">
+            <textarea name="message" placeholder="Повідомлення" rows="4" style="padding: 8px;"></textarea>
+            <button type="submit" style="background: #6f42c1; color: white; border: none; padding: 10px; cursor: pointer; font-weight: bold;">Відправити</button>
+            <button type="button" onclick="document.getElementById('contactModal').style.display='none'" style="background: none; border: none; color: #666; cursor: pointer; font-size: 12px;">Закрити</button>
+        </form>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

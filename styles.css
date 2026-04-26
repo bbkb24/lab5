@@ -1,0 +1,77 @@
+/* Додай це до свого існуючого файлу або заміни все на це */
+html {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+ul { padding-left: 0; list-style-type: none; }
+
+.resume-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 0 20px;
+}
+
+.stars-block { display: flex; gap: 5px; color: #6f42c1; font-size: 1.5rem; }
+
+.header-line { border: none; border-bottom: 2px solid #6f42c1; max-width: 900px; margin: 10px auto; }
+
+.resume-container {
+    display: flex;
+    max-width: 900px;
+    margin: 0 auto 40px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+}
+
+.left-column {
+    flex: 1;
+    background-color: #f3e8fd;
+    padding: 30px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+}
+
+.left-column h2, .section-title { color: #6f42c1; text-transform: uppercase; }
+
+.main-column { flex: 2.5; padding: 30px; }
+
+.section-title { border-bottom: 2px solid #6f42c1; padding-bottom: 5px; }
+
+/* СТИЛІ ДЛЯ НІЧНОЇ ТЕМИ */
+body.dark-theme {
+    background-color: #1a1a1a !important;
+    color: #e0e0e0;
+}
+
+body.dark-theme .resume-container {
+    background-color: #2d2d2d;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.5);
+}
+
+body.dark-theme .left-column {
+    background-color: #3d1d5a;
+}
+
+body.dark-theme .left-column h2, 
+body.dark-theme .left-column p, 
+body.dark-theme .left-column ul, 
+body.dark-theme .contact-section a,
+body.dark-theme .section-title {
+    color: #d1b3ff;
+}
+
+body.dark-theme .header-line,
+body.dark-theme .section-title {
+    border-color: #d1b3ff;
+}
+
+body.dark-theme #contactModal {
+    background-color: #2d2d2d;
+    border-color: #d1b3ff;
+}
